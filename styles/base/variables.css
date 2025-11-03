@@ -1,0 +1,17 @@
+:root {
+  /* Colors */
+  /* Primary */
+  --color-pink-400: #CE9898;
+  --color-red-400: #F96464;
+  --color-red-500: #f96262;
+
+  /* Neutral */
+  --color-gray-900: #423A3A;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #F8BFBF, #EE8B8B);
+  --gradient-secondary: linear-gradient(135deg, #FFFFFF, #FFF4F4);
+  --gradient-tertiary: linear-gradient(135deg, #FFF1F1, #FFFFFF);
+}

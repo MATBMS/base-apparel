@@ -1,0 +1,83 @@
+/* Import */
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('../../fonts/JosefinSans.ttf') format('truetype');
+}
+
+/* Define variables */
+:root {
+  /* Typography */
+  --font-family: 'Josefin Sans', sans-serif;
+  --font-size-base: 16px;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+}
+
+/* Preset */
+.text-preset-1 {
+  font-family: var(--font-family);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  line-height: 100%;
+  letter-spacing: 17.5px;
+}
+
+.text-preset-1-semi-bold {
+  font-family: var(--font-family);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: var(--font-weight-semibold);
+  line-height: 110%;
+  letter-spacing: 17.5px;
+}
+
+.text-preset-2 {
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  line-height: 100%;
+  letter-spacing: 10px;
+  text-align: justify;
+}
+
+.text-preset-2-semi-bold {
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: var(--font-weight-semibold);
+  line-height: 100%;
+  letter-spacing: 10px;
+  text-align: justify;
+}
+
+.text-preset-3 {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 215%;
+  text-align: justify;
+}
+
+.text-preset-4 {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 155%;
+  text-align: justify;
+}
+
+.text-preset-5 {
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 215%;
+  text-align: justify;
+}
