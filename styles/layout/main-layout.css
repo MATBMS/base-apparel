@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 311px 1fr;
+  grid-template-rows: 85px 250px 65px 1fr;
+}
+
+header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.hero-image {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.hero-content {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+
+
+/* SMALL MOBILE (375px and up) */
+@media (min-width: 375px) {}
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}

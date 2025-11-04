@@ -81,3 +81,36 @@
   line-height: 215%;
   text-align: justify;
 }
+
+/* Heading styles */
+h1 {
+  /* text preset 2 light */
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: var(--font-weight-light);
+  line-height: 100%;
+  letter-spacing: 10px;
+  color: var(--color-pink-400);
+}
+
+h1 span {
+  /* text preset 2 semi-bold */
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: var(--font-weight-semibold);
+  line-height: 100%;
+  letter-spacing: 10px;
+  color: var(--color-gray-900);
+}
+
+p {
+  /* text preset 4 */
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 155%;
+  color: var(--color-pink-400);
+}

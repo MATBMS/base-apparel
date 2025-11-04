@@ -16,8 +16,8 @@
 
 /* Sections */
 @import url("./sections/header.css");
-@import url("./sections/main.css");
-@import url("./sections/footer.css");
+@import url("./sections/hero.css");
+
 
 /* Utilities - Must be last to override other styles */
 @import url("./utilities/display.css");

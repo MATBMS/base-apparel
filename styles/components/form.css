@@ -1,0 +1,28 @@
+.input-container {
+  position: relative;
+}
+
+input {
+  /* layout */
+  display: flex;
+  width: 311px;
+  height: 48px;
+  padding: var(--spacing-100) var(--spacing-300);
+  align-items: center;
+  gap: var(--spacing-100);
+  /* styles */
+  border-radius: 28px;
+  border: 1px solid var(--color-pink-400);
+}
+
+input::placeholder {
+  /* text preset 3 */
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 215%;
+  /* color */
+  color: var(--color-pink-400);
+  opacity: 0.5;
+}
