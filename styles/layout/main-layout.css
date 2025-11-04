@@ -1,7 +1,7 @@
 body {
   display: grid;
-  grid-template-columns: 1fr 311px 1fr;
-  grid-template-rows: 85px 250px 65px 1fr;
+  grid-template-columns: 1fr clamp(311px, calc(311px / 375px * 100vw), 445px) 1fr;
+  grid-template-rows: 85px auto 65px auto 92px;
 }
 
 header {
@@ -19,13 +19,19 @@ header {
   grid-row: 4 / 5;
 }
 
-
-
 /* SMALL MOBILE (375px and up) */
 @media (min-width: 375px) {}
 
 /* TABLET (768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  body {
+    grid-template-rows: 85px auto 65px auto 62px;
+  }
+
+  header {
+    grid-column: 1 / 2;
+  }
+}
 
 /* DESKTOP (1440px and up) */
 @media (min-width: 1440px) {}

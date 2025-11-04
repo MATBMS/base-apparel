@@ -11,10 +11,16 @@ header {
   height: 19.9px;
 }
 
+/* Hero image styles */
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
 /* Hero content styles */
 .hero-content {
+  width: 100%;
   display: flex;
-  width: 311.5px;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-400);
@@ -28,3 +34,13 @@ header {
   gap: var(--spacing-200);
   align-self: stretch;
 }
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  .logo {
+    margin-left: 80px;
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}
