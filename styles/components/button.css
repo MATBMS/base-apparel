@@ -17,3 +17,14 @@ button {
   top: 0;
   right: 0;
 }
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  button {
+    width: 100px;
+    height: 56px;
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}
