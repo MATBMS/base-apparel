@@ -17,41 +17,44 @@
       <img src="./icons/logo.svg" alt="Base Apparel Logo" class="logo" height="20px" width="100px">
     </header>
 
-    <picture class="hero-image">
-      <source media="(min-width: 1440px)" srcset="./images/hero-desktop.jpg">
-      <img src="./images/hero-mobile.jpg" alt="Woman wearing Base Apparel clothing">
-    </picture>
+    <main>
+      <picture class="hero-image">
+        <source media="(min-width: 1440px)" srcset="./images/hero-desktop.jpg">
+        <img src="./images/hero-mobile.jpg" alt="Woman wearing Base Apparel clothing">
+      </picture>
 
-    <div class="hero-content">
-      <div class="hero-text-content">
-        <h1>We're <span>Coming Soon</span></h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
-      </div>
-      <form>
-        <div class="input-container">
-          <label for="email" class="sr-only">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required
-            aria-describedby="error-message" aria-invalid="false">
-          <div class="input-hover">
-            <img src="./icons/icon-error.svg" alt="email input error" id="error-icon" class="hide" aria-hidden="true">
-            <button type="submit" id="submit-btn" aria-label="Submit email">
-              <img src="./icons/icon-arrow.svg" alt="Submit" aria-hidden="true">
-            </button>
+      <div class="hero-content">
+        <div class="hero-text-content">
+          <h1>We're <span>Coming Soon</span></h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+        </div>
+        <form>
+          <div class="input-container">
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required
+              aria-describedby="error-message" aria-invalid="false">
+            <div class="input-hover">
+              <img src="./icons/icon-error.svg" alt="email input error" id="error-icon" class="hide" aria-hidden="true">
+              <button type="submit" id="submit-btn" aria-label="Submit email">
+                <img src="./icons/icon-arrow.svg" alt="Submit">
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="error-message hide" id="error-message" role="alert" aria-live="polite">
-          Please provide a valid email
-        </div>
-      </form>
-    </div>
-    <div class="pop-up hide">
+          <div class="error-message hide" id="error-message" role="alert" aria-live="polite">
+            Please provide a valid email
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="pop-up hide" role="dialog" aria-modal="true" aria-labelledby="dialog-title"
+      aria-describedby="dialog-description">
       <div class="pop-up-content">
-        <h2>Thank you!</h2>
-        <p>Your email has been successfully submitted.</p>
-        <button id="close-btn">Close</button>
+        <h2 id="dialog-title">Thank you!</h2>
+        <p id="dialog-description">Your email has been successfully submitted.</p>
+        <button type="button" id="close-btn">Close</button>
       </div>
     </div>
     <script src="./scripts/form.js"></script>

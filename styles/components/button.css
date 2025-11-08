@@ -25,6 +25,3 @@ button:disabled {
     height: 56px;
   }
 }
-
-/* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {}

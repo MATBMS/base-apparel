@@ -13,9 +13,10 @@ form.addEventListener('submit', (event) => {
     showError();
   } else {
     hideError();
+    const submittedEmail = emailInput.value; // Store email before reset
     form.reset();
     popUp.classList.remove('hide');
-    console.log(`${emailInput.value} has been submitted!`);
+    console.log(`${submittedEmail} has been submitted!`);
   }
 });
 
