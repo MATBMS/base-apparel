@@ -12,10 +12,10 @@ button {
   border-radius: 28px;
   background: var(--colors-gradient-1, linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%));
   box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
-  /* position */
-  position: absolute;
-  top: 0;
-  right: 0;
+}
+
+button:disabled {
+  opacity: 0.5;
 }
 
 /* TABLET (768px and up) */
