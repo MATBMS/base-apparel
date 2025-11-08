@@ -10,12 +10,12 @@ button {
   flex-shrink: 0;
   /* styles */
   border-radius: 28px;
-  background: var(--colors-gradient-1, linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%));
+  background: var(--gradient-primary);
   box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
 }
 
 button:disabled {
-  opacity: 0.5;
+  background: #F8CDCD;
 }
 
 /* TABLET (768px and up) */
