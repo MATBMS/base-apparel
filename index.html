@@ -32,7 +32,9 @@
       </div>
       <form>
         <div class="input-container">
-          <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required>
+          <label for="email" class="sr-only">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required
+            aria-describedby="error-message" aria-invalid="false">
           <div class="input-hover">
             <img src="./icons/icon-error.svg" alt="email input error" id="error-icon" class="hide" aria-hidden="true">
             <button type="submit" id="submit-btn" aria-label="Submit email">
@@ -40,7 +42,7 @@
             </button>
           </div>
         </div>
-        <div class="error-message hide" id="error-message">
+        <div class="error-message hide" id="error-message" role="alert" aria-live="polite">
           Please provide a valid email
         </div>
       </form>

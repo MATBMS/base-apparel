@@ -16,3 +16,5 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - HTML, CSS
 
 ## What I learned
+
+- Nothing new...

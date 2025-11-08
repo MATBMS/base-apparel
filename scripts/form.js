@@ -13,11 +13,10 @@ form.addEventListener('submit', (event) => {
     showError();
   } else {
     hideError();
-    // Submit the form or perform other actions
+    form.reset();
+    popUp.classList.remove('hide');
+    console.log(`${emailInput.value} has been submitted!`);
   }
-  form.reset();
-  popUp.classList.remove('hide');
-  console.log(`${emailInput.value} has been submitted!`);
 });
 
 function isValidEmail(email) {
