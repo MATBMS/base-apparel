@@ -17,6 +17,13 @@ input {
   /* styles */
   border-radius: 28px;
   border: 1px solid var(--color-pink-400);
+  /* typography */
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 215%;
+  color: var(--color-gray-100);
 }
 
 input::placeholder {
@@ -29,6 +36,16 @@ input::placeholder {
   /* color */
   color: var(--color-pink-400);
   opacity: 0.5;
+}
+
+.input:focus {
+  border: 1px solid var(--color-pink-400);
+  outline: none;
+}
+
+input:focus.input-error {
+  border: 2px solid var(--color-red-400);
+  outline: none;
 }
 
 .input-hover {
