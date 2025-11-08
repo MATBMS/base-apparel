@@ -24,6 +24,10 @@
   margin-top: 20px;
 }
 
+.pop-up-content button:focus {
+  outline: none;
+}
+
 /* TABLET (768px and up) */
 @media (min-width: 768px) {
   .pop-up-content button {

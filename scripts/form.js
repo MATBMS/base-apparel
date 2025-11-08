@@ -16,6 +16,7 @@ form.addEventListener('submit', (event) => {
     const submittedEmail = emailInput.value; // Store email before reset
     form.reset();
     popUp.classList.remove('hide');
+    closeBtn.focus();
     console.log(`${submittedEmail} has been submitted!`);
   }
 });
@@ -50,4 +51,11 @@ emailInput.addEventListener('input', () => {
 
 closeBtn.addEventListener('click', () => {
   popUp.classList.add('hide');
+});
+
+// Add keyboard event listener for the pop-up
+popUp.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' || event.key === 'Escape') {
+    popUp.classList.add('hide');
+  }
 });
